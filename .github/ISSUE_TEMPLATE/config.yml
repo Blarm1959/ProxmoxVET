@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+    - name: 🌟 new Script request
+      url: https://github.com/community-scripts/ProxmoxVE/discussions/new?category=request-script
+      about: For feature/script requests, please use the Discussions section.
+

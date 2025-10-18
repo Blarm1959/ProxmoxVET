@@ -1,0 +1,59 @@
+# ---------------------------------------
+# Treat Shell files as first-class code
+# ---------------------------------------
+*.sh linguist-detectable=true
+*.bash linguist-language=Shell
+*.func linguist-language=Shell
+*.install linguist-language=Shell
+
+# ---------------------------------------
+# Treat Golang files as Go (for /api/)
+api/**/*.go linguist-language=Go
+
+# ---------------------------------------
+# Treat frontend as JavaScript/TypeScript (optional)
+frontend/**/*.ts linguist-language=TypeScript
+frontend/**/*.js linguist-language=JavaScript
+
+# ---------------------------------------
+# Exclude documentation from stats
+*.md linguist-documentation
+docs/** linguist-documentation
+README.md linguist-documentation
+CONTRIBUTING.md linguist-documentation
+SECURITY.md linguist-documentation
+
+# ---------------------------------------
+# Exclude generated/config files
+*.json linguist-generated
+frontend/public/json/*.json linguist-generated=false
+*.lock linguist-generated
+*.yml linguist-generated
+*.yaml linguist-generated
+.github/** linguist-generated
+.vscode/** linguist-generated
+
+# ---------------------------------------
+# Standard text handling
+* text=auto eol=lf
+# ================================ merge=ours
+# INSTALL merge=ours
+# Remove everything in install except your Dispatcharr installer merge=ours
+install/** merge=ours
+install/dispatcharr-install.sh merge=ours
+# Also completely ignore the deferred subfolder in install merge=ours
+install/deferred/** merge=ours
+# CT merge=ours
+# Remove everything in ct except your Dispatcharr helper merge=ours
+ct/** merge=ours
+ct/dispatcharr.sh merge=ours
+# Completely ignore the deferred subfolder in ct merge=ours
+ct/deferred/** merge=ours
+# CT HEADERS merge=ours
+# Remove everything in ct/headers except your Dispatcharr header merge=ours
+ct/headers/** merge=ours
+ct/headers/dispatcharr merge=ours
+# FRONTEND JSON merge=ours
+# Remove everything in frontend/public/json except your Dispatcharr JSON merge=ours
+frontend/public/json/** merge=ours
+frontend/public/json/dispatcharr.json merge=ours
