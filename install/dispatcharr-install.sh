@@ -13,6 +13,7 @@ setting_up_container
 network_check
 update_os
 
+#Blarm1959 Comments - START
 # Suppress apt-listchanges mails and prompts during automated install
 export DEBIAN_FRONTEND=noninteractive
 export APT_LISTCHANGES_FRONTEND=none
@@ -345,3 +346,4 @@ msg_info "Cleaning up"
 $STD apt-get -y autoremove
 $STD apt-get -y autoclean
 msg_ok "Cleaned"
+#Blarm1959 Comments - END
