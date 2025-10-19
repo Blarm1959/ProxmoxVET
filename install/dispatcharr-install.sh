@@ -5,6 +5,7 @@
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://github.com/Dispatcharr/Dispatcharr
 
+#Blarm1959 Comments - START
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
 color
 verb_ip6
@@ -13,7 +14,6 @@ setting_up_container
 network_check
 update_os
 
-#Blarm1959 Comments - START
 # Suppress apt-listchanges mails and prompts during automated install
 export DEBIAN_FRONTEND=noninteractive
 export APT_LISTCHANGES_FRONTEND=none

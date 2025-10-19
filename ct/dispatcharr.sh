@@ -5,6 +5,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/Blarm1959/ProxmoxVET/Dispa
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://github.com/Dispatcharr/Dispatcharr
 
+#Blarm1959 Comments - START
 APP="Dispatcharr"
 var_tags="${var_tags:-}"
 var_cpu="${var_cpu:-2}"
@@ -24,7 +25,6 @@ function update_script() {
   check_container_storage
   check_container_resources
 
-#Blarm1959 Comments - START
   # Disable all apt-listchanges prompts and mails
   export DEBIAN_FRONTEND=noninteractive
   export APT_LISTCHANGES_FRONTEND=none
